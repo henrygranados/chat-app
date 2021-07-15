@@ -11,7 +11,9 @@
 If I were given more time to finish this task then I could potentially add the following:
  
  a) All of the messages can be stored in a database.
+ 
  b) We can create a Login/Registration page.
+ 
  c) We could possibly display timestamps to the messages and format it by using MomentJS, dateFNS or any other date Javascript library.
 
 Thank you for this oportunity.
