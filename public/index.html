@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chat Application</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div id="welcome-panel">
+		<h2>Welcome to the ChatApp</h2>
+		<input id = "username" type="text" placeholder = "Enter username">
+		<button onclick = "enterChat()">Enter Chat</button>
+	</div>
+	<div id="app-chat">
+		<h2 class = "cloud box">Live Chat</h2>
+		<div id="messages-window">
+			<div id="output"></div>
+			<div id="typing-message"></div>
+		</div>
+		<div id="users-container">
+			<p id='users-title'>Online Users</p>
+			<ul id = "lisOfUsers">
+			</ul>
+			<button id = "leave-chat">Leave chat</button>
+		</div>
+		<input id = "loggedInUser" type="text" readonly>
+		<input id = "message" type="text" placeholder = "Enter message...">
+		<button id = "send-message">Send Message</button>
+	</div>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src = "chat.js"></script>
+</body>
+</html>
