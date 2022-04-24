@@ -31,5 +31,6 @@ io.on('connection', socket => {
 
 	socket.on('typing', data => {
 		socket.broadcast.emit('typing', data);
+		// comment
 	});
 });
